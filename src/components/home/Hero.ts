@@ -7,7 +7,7 @@ export default function Hero(DOM: HTMLElement) {
     const ui = useTSElements(
         DOM,
         html`
-    <div class="flex flex-col flex-1 py-2 gap-4 h-screen overflow-y-auto no-scrollbar">
+    <div class="flex flex-col flex-1 py-2 gap-4 max-h-[calc(100vh-100px)] overflow-y-auto no-scrollbar">
         <div id="chat-box"></div>
         <div id="reels"></div>
         <div id="post"></div>

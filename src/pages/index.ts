@@ -13,7 +13,7 @@ export default function Index(DOM: HTMLElement) {
   const ui = useTSElements(
     DOM,
     html`
-      <div class="p-2 animate__animated animate__fadeIn duration-300 flex justify-between min-w-full">
+      <div class="p-2 animate__animated max-h-[calc(100vh-50px)] overflow-y-scroll animate__fadeIn duration-300 flex justify-between min-w-full">
         <div id="sidebar" class="sticky top-0 hidden lg:block"></div>
         <div id="main" class="flex-1 w-full lg:max-w-[700px] px-2"></div>
         <div id="rightbar" class="w-[320px] hidden lg:block"></div>

@@ -23,7 +23,7 @@ export default function Rightbar(DOM: HTMLElement) {
     const ui = useTSElements(
         DOM,
         html`
-        <div class="pt-2 pr-3 max-h-[90vh] overflow-y-scroll overflow-x-hidden">
+        <div class="pt-2 pr-3 max-h-[calc(100vh-100px)] overflow-y-scroll overflow-x-hidden">
             <div>
                 <div class="flex items-center justify-between pb-4">
                     <p>Friend Requests</p>
