@@ -1,4 +1,4 @@
-import { html, useTSElements, useTSMetaData, useTSNavigate } from "@devwareng/vanilla-ts";
+import { html, useTSElements, useTSMetaData, useTSNavigate, useTSNoReload } from "@devwareng/vanilla-ts";
 
 export default function Notfound(DOM: HTMLElement) {
 
@@ -29,5 +29,6 @@ export default function Notfound(DOM: HTMLElement) {
     goBack: () => navigate.back()
   })
 
+  useTSNoReload(DOM)
   return ui;
 }

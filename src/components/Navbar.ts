@@ -1,4 +1,4 @@
-import { html, useTSElements } from '@devwareng/vanilla-ts'
+import { html, useTSElements, useTSNoReload } from '@devwareng/vanilla-ts'
 
 export default function Navbar(DOM: HTMLElement) {
 
@@ -43,5 +43,7 @@ export default function Navbar(DOM: HTMLElement) {
         </div>
         `
     );
+
+    useTSNoReload(DOM)
     return ui
 }
