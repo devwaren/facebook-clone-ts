@@ -3,10 +3,13 @@ import { useTSParams } from "@devwareng/vanilla-ts";
 
 export const Router = async (DOM: HTMLElement) => {
   useTSParams.getState();
-  const router = createRouter(DOM);
-  (await router).navigate(window.location.pathname);
+  const router = await createRouter(DOM);
 
-  window.addEventListener("popstate", async () => {
-    (await router).navigate(window.location.pathname);
+  // initial navigation
+  await router.navigate(window.location.pathname + window.location.search);
+
+  // back/forward navigation
+  window.addEventListener("popstate", () => {
+    void router.navigate(window.location.pathname + window.location.search, false);
   });
 };

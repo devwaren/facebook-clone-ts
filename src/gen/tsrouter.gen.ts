@@ -32,19 +32,15 @@ export async function createRouter(DOM: HTMLElement) {
     return null
   }
 
-  async function navigate(path: string) {
+  async function navigate(path: string, pushState: boolean = true) {
     const match = matchRoute(path)
-    if (match) { await match.component(DOM); history.pushState({}, "", path) }
-    else { NotFound(DOM) }
+    if (match) {
+      await match.component(DOM)
+      if (pushState) history.pushState({}, "", path)
+    } else {
+      NotFound(DOM)
+    }
   }
 
-  window.addEventListener("popstate", async () => {
-    const path = window.location.pathname + window.location.search
-    const match = matchRoute(path)
-    if (match) { await match.component(DOM) }
-    else { NotFound(DOM) }
-  })
-
-  await navigate(window.location.pathname + window.location.search)
   return { navigate, routes: routeTree }
 }
