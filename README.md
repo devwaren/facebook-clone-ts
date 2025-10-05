@@ -2,6 +2,8 @@
 
 ## Main Features
 
+### Facebook Clone (Frontend only)
+
 - Single Page Application (SSR)
 - TypeScript
 - Vite
@@ -89,3 +91,4 @@ return ui
 DOM - The DOM element to render the html to the page
 html - The html to render to the page allows you to use [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). 
 more documentation will be added soon#
+
