@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "animate.css";
+@import "boxicons";
+
+@theme {
+    --color-dark: #252728;
+    --color-darkslate: #1C1C1D;
+    --color-inputslate: #333334;
+    --color-lightslate: #3B3D3E;
+    --bg-20: -20%;
+}
+
+.border-lightslate {
+    border: 1px solid var(--color-lightslate);
+    border-left: 0;
+    border-right: 0;
+}
+
+.bg-icons {
+    background-image: url("/icons.webp");
+}
+
+.bg-friends {
+    background-position: 60% 60%;
+}
+
+.bg-dashboard {
+    background-position: 50% 110%;
+}
+
+.bg-groups {
+    background-position: 50% 13%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
