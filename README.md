@@ -26,6 +26,8 @@ It uses [Vite](https://vitejs.dev/) and [TailwindCSS](https://tailwindcss.com/).
 3. Start the development server: `npm run dev`
 4. Open the application in your browser: `http://localhost:5173`
 
+required extension https://marketplace.visualstudio.com/items?itemName=colton.inline-html
+
 ## Deployment
 
 1. Build the application: `npm run build`
@@ -91,4 +93,5 @@ return ui
 DOM - The DOM element to render the html to the page
 html - The html to render to the page allows you to use [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). 
 more documentation will be added soon#
+
 
