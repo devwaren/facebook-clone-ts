@@ -1,9 +1,7 @@
 // AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
-import { html, useTSElements, useTSLazy } from "@devwareng/vanilla-ts";
+import { useTSLazy } from "@devwareng/vanilla-ts";
 
-export function NotFound(DOM: HTMLElement) {
-  return useTSElements(DOM, html`<div class="p-4 animate__animated animate__fadeIn"><h1>404 - Page Not Found</h1></div>`)
-}
+export const NotFound = useTSLazy(() => import("../pages/notfound"))
 
 export const routeTree = [
   { 

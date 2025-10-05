@@ -3,9 +3,9 @@ import { html, useTSCollection, useTSElements, useTSMetaData } from '@devwareng/
 
 export default function Index(DOM: HTMLElement) {
   useTSMetaData({
-    name: 'index',
-    description: '',
-    author: '',
+    name: 'Facebook Clone Feed Page',
+    description: 'Feed page',
+    author: 'Dev Waren',
     title: 'Facebook Clone',
   });
 

@@ -16,15 +16,15 @@ export default function Navbar(DOM: HTMLElement) {
             </div>
         
             <div class="min-w-[700px] grid-cols-5 gap-1 text-3xl hidden lg:grid">
-                <a href="#" class="hover:bg-inputslate grid place-items-center rounded-md h-full py-2"><span
+                <a href="/" class="hover:bg-inputslate grid place-items-center rounded-md h-full py-2"><span
                         class="bx bxs-home"></span></a>
-                <a href="#" class="hover:bg-inputslate grid place-items-center rounded-md h-full py-2"><span
+                <a href="/dashboard" class="hover:bg-inputslate grid place-items-center rounded-md h-full py-2"><span
                         class="bx bxs-dashboard"></span></a>
-                <a href="#" class="hover:bg-inputslate grid place-items-center rounded-md h-full py-2"><span
+                <a href="/watch" class="hover:bg-inputslate grid place-items-center rounded-md h-full py-2"><span
                         class="bx bx-desktop"></span></a>
-                <a href="#" class="hover:bg-inputslate grid place-items-center rounded-md h-full py-2"><span
+                <a href="/marketplace" class="hover:bg-inputslate grid place-items-center rounded-md h-full py-2"><span
                         class="bx bx-store-alt"></span></a>
-                <a href="#" class="hover:bg-inputslate grid place-items-center rounded-md h-full py-2"><span
+                <a href="/games" class="hover:bg-inputslate grid place-items-center rounded-md h-full py-2"><span
                         class="bx bxs-joystick-alt"></span></a>
             </div>
         
