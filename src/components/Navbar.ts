@@ -1,4 +1,5 @@
-import { html, useTSElements, useTSNoReload } from '@devwareng/vanilla-ts'
+import { useNoReload } from '@/hooks';
+import { html, useTSElements } from '@devwareng/vanilla-ts'
 
 export default function Navbar(DOM: HTMLElement) {
 
@@ -44,6 +45,7 @@ export default function Navbar(DOM: HTMLElement) {
         `
     );
 
-    useTSNoReload(DOM)
+    useNoReload(DOM)
+
     return ui
 }

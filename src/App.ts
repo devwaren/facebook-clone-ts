@@ -1,4 +1,4 @@
-import { html, useTSCollection, useTSElements, useTSNoReload, useTSSSRHydration } from '@devwareng/vanilla-ts'
+import { html, useTSCollection, useTSElements, useTSSSRHydration } from '@devwareng/vanilla-ts'
 import { Router } from './routes/__root';
 import "./index.css"
 import { Navbar } from './components';
@@ -18,7 +18,6 @@ export default function App(DOM?: HTMLElement) {
     `
   )
 
-  useTSNoReload(isDOM)
 
   const sections = ["navbar", "routes"]
   const components = [Navbar, Router]
